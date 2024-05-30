@@ -1,0 +1,26 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+ul {
+  background-color: black;
+  color: white;
+  display: flex;
+}
+
+ul li {
+  margin-right: 10px;
+  list-style: none;
+  padding: 10px;
+}

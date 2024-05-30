@@ -1,0 +1,7 @@
+.hero-main {
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+    padding-inline: 200px;
+    align-items: center;
+}
