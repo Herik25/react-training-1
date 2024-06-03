@@ -4,5 +4,7 @@ import App from './App.jsx'
 import Hero from "./component/Home.jsx"
 
 ReactDom.createRoot(document.getElementById('harsh')).render(
-  <Hero />
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 )

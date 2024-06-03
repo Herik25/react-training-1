@@ -6,7 +6,7 @@ function Nav() {
       <div>
         <h1>LOGO</h1>
       </div>
-      <div style={{ display: "flex", alignItems: "center", gap: "100px"}}>
+      <div style={{ display: "flex", gap: "100px"}}>
          <ul>
         <li>Home</li>
         <li>About</li>
