@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Card.css";
 
 function Card({image, heading, body, date}) {
+  const [number, setNumber] = useState(0)
+
+  function handlePlus() {
+    console.log("hello harsh");
+    setNumber(val => val+ 1)
+    // number++
+    // setNumber(50)
+  }
+
+  function handleMinus() {
     
+    setNumber(preVal => preVal - 1)
+  }
+  
   return (
     <div className="card-body">
       <div className="card-img">
@@ -24,6 +37,13 @@ function Card({image, heading, body, date}) {
         <div className="card-date">
           {/* <p>{props.date}</p> */}
           <p>{date}</p>
+        </div>
+        <div>
+          <button onClick={handlePlus}>
+            +
+          </button>
+          {number}
+          <button onClick={handleMinus}>-</button>
         </div>
       </div>
     </div>

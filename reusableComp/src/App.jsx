@@ -1,10 +1,11 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Card from './components/Card'
 
 function App() {
+  const [number, setNumber] = useState(0);
   const imgLink = "https://getwallpapers.com/wallpaper/full/c/b/2/1184187-gorgerous-healthy-food-wallpaper-1920x1080.jpg"
   const name = "this is pizza"
   const date = "2022-12-12"
