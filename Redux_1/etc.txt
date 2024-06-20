@@ -1,0 +1,31 @@
+//required libraires = @reduxjs/toolkit , react-redux
+
+// store folder and index file in it
+// create a slice => name, initalState, store 
+
+// store.getState() and store.dispatch({type, payload})
+
+// store.dispatch(songSlice.actions.addSong("good song!"))
+
+connection store to the react usign react-redux
+
+// export the store from the file
+// import the store in the main.jsx
+// import Provider from the react-redux
+// wrap the App component with the Provider, pass the store to the Provider
+
+handeling the state change from the component
+
+// add a reducer to one of your slices that changes state in some particular way
+// export the action creators that slice automatically cerates 
+// find the component that you want to dispatch from 
+// import the action creators and useDispatch from react-redux
+// call useDispatch hook to get access to the dispatch function
+// when the use does something,call action creators to get an action, then dispatch it
+
+accessing state 
+
+// find the component that needs to access some state
+// import the useSelector hook
+// call the hook passing in a selector function
+// use the state! anytime the state changes the component will rerender
