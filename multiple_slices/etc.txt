@@ -1,0 +1,18 @@
+Redux State Design 
+    identify what State exists in the app
+    identify how that state changes over time
+    Group together the common peices of state
+    create slices for each Group
+
+
+------------------------------------------------------------
+|         slice # 1           |          Slice # 2         |
+|----------------------------------------------------------|
+|        name - string        |  searchTerm - string       |
+|        cost - number        |  cars - [] {name, id, cost}|
+|        --------------          --------------------------|
+|        changeName           |   changeTerm               |
+|        changeCost           |   addCar & RemoveCar       |
+|                                                          |
+|                                                          |
+------------------------------------------------------------

@@ -1,0 +1,9 @@
+Creating async thunk 
+
+// create a new file for your thunk.
+// createa a thunk. give it a base type that describes the purpose of the request 
+// in the thunk, make the request and return the data that you want to use in reducer
+// export that thunk funcion
+// in the slice adds the extra reducer, watching for the action types made by the thunk
+// export that from index js file
+// when the user does something dispatch that thunk func

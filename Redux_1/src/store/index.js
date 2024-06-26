@@ -1,8 +1,10 @@
-import { configureStore, createSlice, createStore } from "@reduxjs/toolkit";
+import { configureStore, createAction, createSlice, createStore } from "@reduxjs/toolkit";
+
+export const reset = createAction("app/reset")
 
 const songSlice = createSlice({
     name: "song",
-    // song + / + addSong = song/addSong
+    // song + / + addSong = song/reset
     initialState: [],
     reducers: {
         addSong: (state, action) => {
@@ -11,6 +13,11 @@ const songSlice = createSlice({
         removeSong: (state, action) => {
             // 
         }
+    },
+    extraReducers(builder) {
+        builder.addCase(reset, (state, action) => {
+            return []
+        })
     }
 })
 

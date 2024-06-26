@@ -1,0 +1,12 @@
+{
+    "users" : [
+        {"id": 1, "name": "harsh"},
+        {"id": 2, "name": "ulala"}
+    ],
+    "albums": [
+
+    ],
+    "photos": [
+
+    ]
+}

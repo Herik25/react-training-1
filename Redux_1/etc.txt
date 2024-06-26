@@ -29,3 +29,35 @@ accessing state
 // import the useSelector hook
 // call the hook passing in a selector function
 // use the state! anytime the state changes the component will rerender
+
+
+file structure 
+
+src/
+    Movies/
+        MoviesList.jsx
+        MoviesSlice.js
+    Songs/
+        SongsList.jsx
+        SongSlice.js
+    store/
+        action.js
+        index.js
+    App.jsx
+    main.jsx
+
+
+- redux recommend feature based approach 
+
+src/
+    components/
+        MoviesList.jsx
+        SongsList.jsx
+    store/
+        slices/
+            MoviesSlice.js
+            SongsSlices.js
+        actions.js
+        index.js
+    App.jsx
+    main.jsx
